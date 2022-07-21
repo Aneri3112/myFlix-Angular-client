@@ -27,7 +27,7 @@ export class FetchApiDataService {
   }
 
   //User Login
-  public userlogin(userDetails: any): Observable<any> {
+  public userLogin(userDetails: any): Observable<any> {
     console.log(userDetails);
     return this.http
     .post(apiUrl + '/login', userDetails)
