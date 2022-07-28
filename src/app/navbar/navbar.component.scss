@@ -1,0 +1,12 @@
+.navbar {
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    padding-right: 1rem;
+  }

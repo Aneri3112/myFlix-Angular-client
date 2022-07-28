@@ -1,0 +1,52 @@
+mat-toolbar {
+    justify-content: space-between;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .mat-card-title {
+    display: flex;
+    max-width: 210px;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+  }
+  .mat-card-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }  
+  .content > mat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 5px 5px #e9ecef;
+    background-color: #fff;
+    max-width: 280px;
+    width: 280px;
+    margin: 15px;
+    padding: 20px 3px;
+  }
+  .mat-card-image {
+    height: 350px;
+    width: 250px;
+    object-fit: contain;
+  }
+  
+  .column-label {
+    margin-right: 2px;
+    font-size: 1rem;
+  }
+
+  .mat-icon-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
