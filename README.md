@@ -83,3 +83,24 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 3. Start an new Angular project:<br/>
    run `ng new <reposetory/project-name>` in the Terminal<br/>
    _The CLI tool will ask you about adding routes (at this point, the answer is Yes) and what type of stylesheets you want to use (SCSS is a good choice)._
+
+4. Use @angular/cli to create new components:<br/>
+   run `ng generate component <component-name>` in the Terminal
+
+5. Deploying the Application:<br/>
+   At frist you need to add angular-cli-ghpages by running `ng add angular-cli-ghpages`
+
+6. Build your application, to do so, run the following command, replacing <repository-name> with your own repository name:<br/>
+   `ng deploy --base-href=/<repository-name>/`
+
+7. Wait for angular-cli-ghpages to generate the new production code. It will then try to push the code to the gh-pages branch, so it will prompt you to enter your GitHub username and password if you haven't automated the GitHub authentication process before.
+
+---
+
+# App / Livepage:
+
+[Link to Livepage](https://aneri3112.github.io/myFlix-Angular-client/welcome)
+
+Livepage after successfully registrationn/log-in:
+
+![Livepage](./src/img/app_sc.png)
