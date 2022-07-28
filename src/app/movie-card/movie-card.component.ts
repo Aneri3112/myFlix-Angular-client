@@ -75,7 +75,7 @@ getMovies(): void {
   getFavoriteMovies(): void {
     this.fetchApiData.getFavoriteMovies().subscribe((resp: any) => {
       this.favoriteMovies = resp;
-      console.log(this.favoriteMovies);
+      //console.log(this.favoriteMovies);
       return this.favoriteMovies;
     });
   }
@@ -87,7 +87,7 @@ getMovies(): void {
   addToFavoriteMovies(id: string): void {
     console.log(id);
     this.fetchApiData.addFavoriteMovie(id).subscribe((result) => {
-      console.log(result);
+     // console.log(result);
       this.ngOnInit();
     })
   }
@@ -95,7 +95,7 @@ getMovies(): void {
   removeFromFavoriteMovies(id: string): void {
     console.log(id);
     this.fetchApiData.removeFavoriteMovie(id).subscribe((result) => {
-      console.log(result);
+      //console.log(result);
       this.ngOnInit();
     })
   }

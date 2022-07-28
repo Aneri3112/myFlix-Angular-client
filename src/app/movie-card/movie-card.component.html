@@ -11,7 +11,7 @@
 
                     <button
                         mat-button
-                        color="primary"
+                        color="Basic"
                         (click)="openGenreDialog(movie.Genre.Name, movie.Genre.Description)"
                     >
                         Genre
@@ -19,7 +19,7 @@
 
                     <button
                         mat-button
-                        color="primary"
+                        color="Basic"
                         (click)="openDirectorDialog(movie.Director.Name, movie.Director.Bio, movie.Director.Birth)"
                     >
                         Director
@@ -27,17 +27,17 @@
 
                     <button
                         mat-button
-                        color="primary"
+                        color="Basic"
                         (click)="openSynopsisDialog(movie.Title, movie.Description)"
                     >
                         Synopsis
                     </button>
                     
                     <!-- Render add to or remove from favorites button depending on isFav -->
-                    <button mat-button *ngIf="!isFav(movie._id)" (click)="addToFavoriteMovies(movie._id)" color="primary">
+                    <button mat-button *ngIf="!isFav(movie._id)" (click)="addToFavoriteMovies(movie._id)" color="basic">
                         <mat-icon>favorite_border</mat-icon>
                     </button>
-                    <button mat-button *ngIf="isFav(movie._id)" (click)="removeFromFavoriteMovies(movie._id)" color="primary">
+                    <button mat-button *ngIf="isFav(movie._id)" (click)="removeFromFavoriteMovies(movie._id)" color="basic">
                         <mat-icon>favorite</mat-icon>
                     </button>
                 </mat-card-actions>
