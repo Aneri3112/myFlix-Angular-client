@@ -10,138 +10,43 @@
 <div class="col-8 col-content">
 <div class="tsd-page-title">
 <h2>my-flix-angular-client</h2></div>
-<div class="tsd-panel tsd-typography">
-<a href="#myflixangularclient" id="myflixangularclient" style="color: inherit; text-decoration: none;">
-  <h1>MyFlixAngularClient</h1>
-</a>
-<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 14.0.6.</p>
-<hr>
-
-<a href="#objective" id="objective" style="color: inherit; text-decoration: none;">
-  <h2>Objective</h2>
-</a>
-<p><strong>Using Angular, build the client-side for an application called MovieFlix based on its existing server-side code (REST API and database, with supporting documentation.</strong></p>
-<hr>
-
-<a href="#design-criteria" id="design-criteria" style="color: inherit; text-decoration: none;">
-  <h2>Design Criteria</h2>
-</a>
-
-<a href="#user-stories" id="user-stories" style="color: inherit; text-decoration: none;">
-  <h3>User Stories:</h3>
-</a>
-<ul>
-<li>As a user, I want to be able to receive information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.</li>
-<li>As a user, I want to be able to create a profile so I can save data about my favorite movies.</li>
-</ul>
-
-<a href="#key-features" id="key-features" style="color: inherit; text-decoration: none;">
-  <h2>Key Features:</h2>
-</a>
-<ul>
-<li>Your app should display a welcome view where users will be able to either log in or register an account.</li>
-<li>Once authenticated, the user should now view all movies.</li>
-<li>Upon clicking on a particular movie, users will be taken to a single movie view, where additional movie details will be displayed. The single movie view will contain the following additional features:<br/><ul>
-<li>A button that when clicked takes a user to the director view, where details about the director of that particular movie will be displayed.</li>
-<li>A button that when clicked takes a user to the genre view, where details about that particular genre of the movie will be displayed.</li>
-</ul>
-</li>
-</ul>
-
-<a href="#technical-requirements" id="technical-requirements" style="color: inherit; text-decoration: none;">
-  <h2>Technical Requirements:</h2>
-</a>
-<ul>
-<li>The application must be written in Angular (version 9 or later)</li>
-<li>The application requires the latest version of Node.js and npm package</li>
-<li>The application must contain user registration and login forms</li>
-<li>The application must be designed using Angular Material</li>
-<li>The application&#39;s codebase must contain comments using Typedoc</li>
-<li>The project must contain technical documentation using JSDoc</li>
-<li>The project must be hosted on GitHub Pages</li>
-</ul>
-<hr>
-
-<a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
-  <h1>Setup</h1>
-</a>
-
-<a href="#development-server" id="development-server" style="color: inherit; text-decoration: none;">
-  <h2>Development server</h2>
-</a>
-<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The application will automatically reload if you change any of the source files.</p>
-
-<a href="#code-scaffolding" id="code-scaffolding" style="color: inherit; text-decoration: none;">
-  <h2>Code scaffolding</h2>
-</a>
-<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
-
-<a href="#build" id="build" style="color: inherit; text-decoration: none;">
-  <h2>Build</h2>
-</a>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
-
-<a href="#running-unit-tests" id="running-unit-tests" style="color: inherit; text-decoration: none;">
-  <h2>Running unit tests</h2>
-</a>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-
-<a href="#running-end-to-end-tests" id="running-end-to-end-tests" style="color: inherit; text-decoration: none;">
-  <h2>Running end-to-end tests</h2>
-</a>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.</p>
-
-<a href="#further-help" id="further-help" style="color: inherit; text-decoration: none;">
-  <h2>Further help</h2>
-</a>
-<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://angular.io/cli">Angular CLI Overview and Command Reference</a> page.</p>
-<hr>
-
-<a href="#installation-requirements" id="installation-requirements" style="color: inherit; text-decoration: none;">
-  <h1>Installation requirements</h1>
-</a>
-<ol>
-<li>Check if Angular is installed:<br/>
-run <code>ng --version</code> in the Terminal<br/></li>
-</ol>
-<ul>
-<li><p>If Angular is installed, make sure you have the latest version:<br/>
-run <code>npm install -g @angular/cli@latest</code> in the Terminal<br/></p>
-</li>
-<li><p>If Angular is not installed, install the latest version:<br/>
-run <code>npm install -g @angular/cli</code> in the Terminal<br/>
-<em>Until recently, @angular/cli was known as angular-cli. Keep this in mind when looking at web-based resources as some may be outdated.</em></p>
-</li>
-</ul>
-<ol start="2">
-<li><p>Before starting a new project, make sure Node.js and npm package manager are up to date.<br/>
-run <code>node -v</code> and <code>npm -v</code> in the Terminal to check the installed version.</p>
-</li>
-<li><p>Start an new Angular project:<br/>
-run <code>ng new &lt;reposetory/project-name&gt;</code> in the Terminal<br/>
-<em>The CLI tool will ask you about adding routes (at this point, the answer is Yes) and what type of stylesheets you want to use (SCSS is a good choice).</em></p>
-</li>
-<li><p>Use @angular/cli to create new components:<br/>
-run <code>ng generate component &lt;component-name&gt;</code> in the Terminal</p>
-</li>
-<li><p>Deploying the Application:<br/>
-At frist you need to add angular-cli-ghpages by running <code>ng add angular-cli-ghpages</code></p>
-</li>
-<li><p>Build your application, to do so, run the following command, replacing <repository-name> with your own repository name:<br/>
-<code>ng deploy --base-href=/&lt;repository-name&gt;/</code></p>
-</li>
-<li><p>Wait for angular-cli-ghpages to generate the new production code. It will then try to push the code to the gh-pages branch, so it will prompt you to enter your GitHub username and password if you haven&#39;t automated the GitHub authentication process before.</p>
-</li>
-</ol>
-<hr>
-
-<a href="#app--livepage" id="app--livepage" style="color: inherit; text-decoration: none;">
-  <h1>App / Livepage:</h1>
-</a>
-<p><a href="https://aneri3112.github.io/myFlix-Angular-client/welcome">Link to Livepage</a></p>
-<p>Livepage after successfully registrationn/log-in:</p>
-<p><img src="./src/img/app_sc.png" alt="Livepage"></p>
-</div></div>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<h3 class="tsd-index-heading uppercase">Index</h3>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Modules</h3>
+<div class="tsd-index-list"><a href="modules/app_app_routing_module.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>app/app-<wbr/>routing.module</span></a>
+<a href="modules/app_app_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/app.component</span></a>
+<a href="modules/app_app_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/app.component.spec</span></a>
+<a href="modules/app_app_module.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/app.module</span></a>
+<a href="modules/app_director_director_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/director/director.component</span></a>
+<a href="modules/app_director_director_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/director/director.component.spec</span></a>
+<a href="modules/app_edit_profile_edit_profile_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/edit-<wbr/>profile/edit-<wbr/>profile.component</span></a>
+<a href="modules/app_edit_profile_edit_profile_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/edit-<wbr/>profile/edit-<wbr/>profile.component.spec</span></a>
+<a href="modules/app_fetch_api_data_service.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/fetch-<wbr/>api-<wbr/>data.service</span></a>
+<a href="modules/app_fetch_api_data_service_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/fetch-<wbr/>api-<wbr/>data.service.spec</span></a>
+<a href="modules/app_genre_genre_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/genre/genre.component</span></a>
+<a href="modules/app_genre_genre_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/genre/genre.component.spec</span></a>
+<a href="modules/app_movie_card_movie_card_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/movie-<wbr/>card/movie-<wbr/>card.component</span></a>
+<a href="modules/app_movie_card_movie_card_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/movie-<wbr/>card/movie-<wbr/>card.component.spec</span></a>
+<a href="modules/app_navbar_navbar_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/navbar/navbar.component</span></a>
+<a href="modules/app_navbar_navbar_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/navbar/navbar.component.spec</span></a>
+<a href="modules/app_profile_profile_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/profile/profile.component</span></a>
+<a href="modules/app_profile_profile_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/profile/profile.component.spec</span></a>
+<a href="modules/app_synopsis_synopsis_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/synopsis/synopsis.component</span></a>
+<a href="modules/app_synopsis_synopsis_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/synopsis/synopsis.component.spec</span></a>
+<a href="modules/app_user_login_form_user_login_form_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/user-<wbr/>login-<wbr/>form/user-<wbr/>login-<wbr/>form.component</span></a>
+<a href="modules/app_user_login_form_user_login_form_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/user-<wbr/>login-<wbr/>form/user-<wbr/>login-<wbr/>form.component.spec</span></a>
+<a href="modules/app_user_registration_form_user_registration_form_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/user-<wbr/>registration-<wbr/>form/user-<wbr/>registration-<wbr/>form.component</span></a>
+<a href="modules/app_user_registration_form_user_registration_form_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/user-<wbr/>registration-<wbr/>form/user-<wbr/>registration-<wbr/>form.component.spec</span></a>
+<a href="modules/app_welcome_page_welcome_page_component.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/welcome-<wbr/>page/welcome-<wbr/>page.component</span></a>
+<a href="modules/app_welcome_page_welcome_page_component_spec.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>app/welcome-<wbr/>page/welcome-<wbr/>page.component.spec</span></a>
+<a href="modules/environments_environment.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>environments/environment</span></a>
+<a href="modules/environments_environment_prod.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>environments/environment.prod</span></a>
+<a href="modules/main.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>main</span></a>
+<a href="modules/polyfills.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>polyfills</span></a>
+<a href="modules/test.html" class="tsd-index-link tsd-kind-module"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>test</span></a>
+</div></section></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
